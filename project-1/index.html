@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactos</title>
+</head>
+<body>
+  <h1>Lista de Contactos</h1>
+  <ol id="contactos-lista" ></ol>></ol>
+
+  <form onsubmit="agregarContacto(event)">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" required><br>
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" required>
+    <button type="submit">Agregar Contacto</button>
+  </form>
+  <br>
+
+  <Div>
+    <form onsubmit="borrarContacto(event)">
+        <label for="indice">Numero de contacto a borrar:</label>
+        <input type="number" id="indice" required>
+        <button type="submit">Borrar Contacto</button>
+      </form>
+
+  </Div>
+  <br>
+  <div>
+    <button onclick="imprimirContactos()">Imprimir Contactos</button>
+  </div>
+
+ 
+
+  <script src="List.js"></script>
+</body>
+</html>
