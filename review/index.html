@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactos</title>
+</head>
+<body>
+  <h1>Lista de Contactos</h1>
+  <ol id="contactos-lista"></ol>
+
+  <form onsubmit="agregarContacto(event)">
+    <label for="nombre">Nombres:</label>
+    <input type="text" id="nombre" required><br><br>
+    <label for="apellido">Apellidos:</label>
+    <input type="text" id="apellido" required><br><br>
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" required><br><br>
+    <label for="ciudad">Ciudad:</label>
+    <input type="text" id="ciudad" required><br><br>
+    <label for="direccion">Dirección:</label>
+    <input type="text" id="direccion" required><br><br>
+    <button type="submit">Agregar Contacto</button>
+  </form>
+  <br>
+
+  <div>
+    <form onsubmit="borrarContacto(event)">
+        <label for="indice">Número de contacto a borrar:</label>
+        <input type="number" id="indice" required>
+        <button type="submit">Borrar Contacto</button>
+      </form>
+  </div>
+  <br>
+  <div>
+    <button onclick="imprimirContactos()">Imprimir Contactos</button>
+  </div><br><br>
+
+  <div>
+    <form onsubmit="modificarContacto(event)">
+      <label for="indice-modificar">Número de contacto a modificar:</label>
+      <input type="number" id="indice-modificar" required><br>
+      <br>
+      <label for="nombres-modificar">Nuevos Nombres:</label>
+      <input type="text" id="nombres-modificar" required><br>
+      <br>
+      <label for="apellidos-modificar">Nuevos Apellidos:</label>
+      <input type="text" id="apellidos-modificar" required><br>
+      <br>
+      <label for="telefono-modificar">Nuevo Teléfono:</label>
+      <input type="tel" id="telefono-modificar" required><br>
+      <br>
+      <label for="ciudad-modificar">Nueva Ciudad:</label>
+      <input type="text" id="ciudad-modificar" required><br>
+      <br>
+      <label for="direccion-modificar">Nueva Dirección:</label>
+      <input type="text" id="direccion-modificar" required><br>
+      <br>
+      <button type="submit">Modificar Contacto</button>
+    </form>
+  </div>
+
+  <script src="List.js"></script>
+</body>
+</html>
