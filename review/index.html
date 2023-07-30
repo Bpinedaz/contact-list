@@ -26,20 +26,17 @@
 
   <div>
     <form onsubmit="borrarContacto(event)">
-        <label for="indice">Número de contacto a borrar:</label>
-        <input type="number" id="indice" required>
-        <button type="submit">Borrar Contacto</button>
-      </form>
+      <label for="indice">Número de contacto a borrar:</label>
+      <input type="number" id="indice" required>
+      <button type="submit">Borrar Contacto</button>
+    </form>
   </div>
   <br>
   <div>
-    <button onclick="imprimirContactos()">Imprimir Contactos</button>
-  </div><br><br>
-
-  <div>
     <form onsubmit="modificarContacto(event)">
       <label for="indice-modificar">Número de contacto a modificar:</label>
-      <input type="number" id="indice-modificar" required><br>
+      <input type="number" id="indice-modificar" required> 
+      <button type="submit">Modificar Contacto</button><br>
       <br>
       <label for="nombres-modificar">Nuevos Nombres:</label>
       <input type="text" id="nombres-modificar" required><br>
@@ -56,8 +53,11 @@
       <label for="direccion-modificar">Nueva Dirección:</label>
       <input type="text" id="direccion-modificar" required><br>
       <br>
-      <button type="submit">Modificar Contacto</button>
-    </form>
+      </form>
+  </div>
+  <br>
+  <div>
+    <button onclick="imprimirContactos()">Imprimir Contactos</button>
   </div>
 
   <script src="List.js"></script>
